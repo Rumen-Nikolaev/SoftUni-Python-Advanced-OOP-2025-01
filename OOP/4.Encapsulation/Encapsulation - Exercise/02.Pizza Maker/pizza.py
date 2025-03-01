@@ -3,7 +3,7 @@ class Pizza:
     self.name = name
     self.dough = dough
     self.max_number_of_toppings = max_number_of_toppings
-    self.toppings = toppings
+    self.toppings = {}
 
    @property
    def name(self):
@@ -38,7 +38,13 @@ class Pizza:
 
         self.__max_number_of_toppings = value
 
-       @property
-       def toppings(self):
-         return self.__toppings
+
+      def add_topping(self, topping: Topping):
+        if llen(self.toppings) == self.max_number_of_toppings:
+          raise ValueError("Not enough space for another topping")
+          
+                           
+        self.toppings.append(topping)
+
+
        
