@@ -7,5 +7,5 @@ class Zoo:
     self.animals = []
     self..workers = []
 
-def 
+   def add_animal(self, animal, price):  
   
