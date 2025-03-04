@@ -24,4 +24,5 @@ class MovieWorld:
       self.dvds.append(dvd)
 
   def rent_dvd(self, customer_id, dvd_id):
-    if self.
+    if self.is_rented == True 
+      
