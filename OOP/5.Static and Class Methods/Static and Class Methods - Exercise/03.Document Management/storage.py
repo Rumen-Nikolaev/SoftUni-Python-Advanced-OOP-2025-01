@@ -1,3 +1,7 @@
+from project.topic import Topic
+from project.category import Category
+from project.document import Document
+
 class Storage:
   def __init__(self):
     self.categories = []
